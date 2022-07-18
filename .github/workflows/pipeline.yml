@@ -36,9 +36,9 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "bloglist-app-ddquin" 
           heroku_email: "raheel.amjad.02@gmail.com"
-          healthcheck: "https://bloglist-app-ddquin.herokuapp.com/health"
-          checkstring: "ok"
-          rollbackonhealthcheckfailed: true
+          #healthcheck: "https://bloglist-app-ddquin.herokuapp.com/health"
+          #checkstring: "ok"
+          #rollbackonhealthcheckfailed: true
         if: ${{ !(contains(join(github.event.commits.*.message), '#skip')) && github.event_name == 'push' }}
       #- name: Test Info
       #  uses: rjstone/discord-webhook-notify@v1
