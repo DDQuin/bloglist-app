@@ -12,6 +12,7 @@ env:
   MONGODB_URI: ${{secrets.MONGODB_URI}}
   TEST_MONGODB_URI: ${{secrets.TEST_MONGODB_URI}}
   PORT: ${{secrets.PORT}}
+  SECRET: ${{secrets.SECRET}}
 
 jobs:
   simple_deployment_pipeline:
