@@ -35,7 +35,7 @@ jobs:
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "bloglist-app-ddquin" 
-          heroku_email: "raheel.amjad.02@gmail.com"
+          heroku_email: ${{secrets.EMAIL}}
           #healthcheck: "https://bloglist-app-ddquin.herokuapp.com/health"
           #checkstring: "ok"
           #rollbackonhealthcheckfailed: true
